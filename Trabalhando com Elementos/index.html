@@ -1,0 +1,113 @@
+<!--
+  Cabeçalhos e parágrafos
+  A divisão de textos é geralmente feita por tags <h1>-<h6> (se referem aos títulos e subtítulos da pagina) e <p>(referente aos parágrafos do texto).
+  Geralmente, não há mais de dois h's numa página.
+-->
+<!--
+  Listas <li>
+    - Ordenadas <ol>
+    - Não ordenadas <ul>
+  
+  Listas descritivas <dl>
+    - <dt>
+    - <dd>
+-->
+<!--
+  Citações = recursos para avisar que um determinado texto foi retirado de outra fonte, adicionando um link.
+    
+    <blockquote>
+    <cite>
+    <q>
+-->
+<!--
+  Abrevições
+    <abbr> = Abreviar algum nome grande e ao mesmo tempo mostrar esse nome completo ao descansar o mouse sobre a palavra
+-->
+<!--
+  Representando códigos no computador
+
+  <code> = representar pequenos trechos de código dentro do texto
+  <pre> = representar um bloco completo de código dentro da página
+
+-->
+<!--
+  Elementos Genéricos = tags utilizadas para organizar a estrutura do html sem fzr mudanças drásticas. Geralmente vem atribuindo classes.
+    <div> = cria um bloco genérico
+    <span> = cria um pequeno trecho ou palavras genéricas
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Trabalhando com Elementos</title>
+  </head>
+  <body>
+    <h1>André Lima</h1>
+    <h2>Sobre mim</h2>
+    <div>
+      Me chamo <span>André Luis Lima</span>, também como Deco nas minhas redes pessoais. Tenho 19 anos e ingressei na carreira de Dev, assim como muitos, com certa dúvida sobre qual e área iria focar. Depois de conhecer as principais idéias por trás da ampla área da programação, decidi focar no desenvolvimento web(Front-end). Desde cedo desenvolvi minha página do <a href="https://github.com/Decoollima"><cite>GitHub</cite></a> e <a href="https://www.linkedin.com/in/andr%C3%A9-lima-655831225/"> <cite>LinkedIn</cite></a>, para encontrar parceiros e trabalhos com maior facilidade.
+    </div>
+    <h2>Experiência</h2>
+    <p>
+      <blockquote cite = "https://semioticantirracista.medium.com/">  
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum nisi sed, architecto nam id eveniet tempora ex commodi temporibus deserunt labore placeat provident ad velit voluptate nobis minus dolorem. Incidunt?
+      </blockquote>
+    </p>
+    <h2>Skills</h2>
+    <ul>
+      <dl> <li> <dt><q cite="https://app.rocketseat.com.br/node/o-guia-estelar-de-html"> <abbr title="HyperText Markup Language">HTML5</abbr></q></dt></li><dd>Uma linguagem utilizada para manipulação dos textos em uma página</dd></dl>
+      <dl><li> <dt><q cite = https://app.rocketseat.com.br/node/o-guia-estelar-de-css> <abbr title="Cascading Style Sheets">CSS3</abbr></q></dt><dd>Uma linguagem utilizada para estilização do html</dd></li></dl>
+      <dl><li> <dt><q cite = https://app.rocketseat.com.br/node/o-guia-estelar-de-java-script> <abbr title="Java Script">JS</abbr></q></li></dt></dl><dd>uma linguagem de programação que permite a você implementar itens complexos em páginas web</dd> 
+    </ul>
+    <address>
+      <p>
+        <h2>Informações para contato:<br/></h2>
+        <ul>
+          <li>Decoollima@gmail.com</li>
+          <a href="https://www.instagram.com/decoo_llima/"><li>Instagram</li></a>
+        </ul><br/>
+      </p>
+    </address>
+
+    <p>
+      <h4>Código completo dessa página</h4>
+    </p>
+    <pre>
+      <code>
+
+        &lt;!DOCTYPE html&gt;
+        &lt;html>
+          &lt;head>
+            &lt;title>Trabalhando com Elementos&lt;/title>
+          &lt;/head>
+          &lt;body>
+          &lt;h1>André Lima&lt;/h1>
+          &lt;h2>Sobre mim&lt;/h2>
+          &lt;p>
+          Me chamo André Luis Lima, também como Deco nas minhas redes pessoais. Tenho 19 anos e ingressei na carreira de Dev, assim como muitos, com certa dúvida sobre qual e área iria focar. Depois de conhecer as principais idéias por trás da ampla área da programação, decidi focar no desenvolvimento web(Front-end). Desde cedo desenvolvi minha página do &lt;a href="https://github.com/Decoollima">&lt;cite>GitHub&lt;/cite>&lt;/a> e &lt;a href="https://www.linkedin.com/in/andr%C3%A9-lima-655831225/"> &lt;cite>LinkedIn&lt;/cite>&lt;/a>, para encontrar parceiros e trabalhos com maior facilidade.
+          &lt;/p>
+          &lt;h2>Experiência&lt;/h2>
+          &lt;p>
+          &lt;blockquote cite = "https://semioticantirracista.medium.com/">  
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum nisi sed, architecto nam id eveniet tempora ex commodi temporibus deserunt labore placeat provident ad velit voluptate nobis minus dolorem. Incidunt?
+          &lt;/blockquote>
+          &lt;/p>
+          &lt;h2>Skills&lt;/h2>
+          &lt;ul>
+          &lt;dl> &lt;li> &lt;dt>&lt;q cite="https://app.rocketseat.com.br/node/o-guia-estelar-de-html"> &lt;abbr title="HyperText Markup Language">HTML5&lt;/abbr>&lt;/q>&lt;/dt>&lt;/li>&lt;dd>Uma linguagem utilizada para manipulação dos textos em uma página&lt;&lt;/dd>&lt;/dl>
+          &lt;dl>&lt;li> &lt;dt>&lt;q cite = https://app.rocketseat.com.br/node/o-guia-estelar-de-css> &lt;abbr title="Cascading Style Sheets">CSS3&lt;/abbr>&lt;/q>&lt;/dt>&lt;dd>Uma linguagem utilizada para estilização do html&lt;/dd>&lt;/li>&lt;/dl>
+          &lt;dl>&lt;li> &lt;dt>&lt;q cite = https://app.rocketseat.com.br/node/o-guia-estelar-de-java-script> &lt;abbr title="Java Script">JS&lt;/abbr>&lt;/q>&lt;/li>&lt;/dt>&lt;/dl>&lt;dd>uma linguagem de programação que permite a você implementar itens complexos em páginas web&lt;/dd> 
+         &lt;/ul>
+         &lt;address>
+         &lt;p>
+         &lt;h2>Informações para contato:&lt;br/>&lt;/h2>
+         &lt;ul>
+          &lt;li>Decoollima@gmail.com&lt;/li>
+         &lt;a href="https://www.instagram.com/decoo_llima/">&lt;li>Instagram&lt;/li>&lt;/a>
+          &lt;/ul>&lt;br/>
+         &lt;/p>
+          &lt;/address>
+
+      </code>
+    </pre>
+  </body>
+</html>
