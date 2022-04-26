@@ -1,0 +1,103 @@
+<!--
+  hyperlinks - Elemento âncora - <a>
+  
+  Anatomia e Atributos:
+    <a href = ""></a>
+
+    - globais (title, class, id...)
+    - href
+      -para onde iremos quando clicarmos no link.
+        - url completa
+        - fragmento
+        - email
+        - telefone
+    - download = fazer download
+    - target 
+      - _self (padrão)
+      - _blank
+-->
+<!--
+  Url e caminho dos arquivos
+
+    - Uniform Resource Locator
+      - https://www.google.com.br
+      - Sequência de texto que define onde algo está localizado na web
+    - Url's usam caminhos para localizar arquivos
+
+    - Caminho dos arquivos
+      - Onde, no explorador de arquivos, um recurso está localizado
+    <a href="links.html"></a>
+    
+    Como navegar pelos caminhos?
+    
+    - Diretório atual
+      <a href="links.html"></a>
+    - Outro diretório dentro do atual (./)
+      <a href="./links.html"></a>
+    - Diretório anterior ao atual(../)
+      <a href="../Conceitos/Conceitos.html"></a>
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>André Lima</h1>
+    <img src="../images/FotoAndré.png" alt="Foto Pessoal" />
+    <h3>Portfólio</h3>
+    <h3>Atalhos</h3>
+    <nav>
+      <ul>
+        <li><a href="#about">Sobre mim</a></li>
+        <li><a href="#Work">Experiência</a></li>
+        <li><a href="#Skills">Skills</a></li>
+        <li><a href="#FindMe">Encontre-me</a></li>
+      </ul>
+    </nav>
+    <h2 id="about">Sobre mim</h2>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto illo
+      placeat error, dignissimos autem necessitatibus dolorem recusandae quae
+      quasi molestiae quaerat tenetur ut sequi iure, ad nisi porro doloremque
+      aliquam.
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto illo
+      placeat error, dignissimos autem necessitatibus dolorem recusandae quae
+      quasi molestiae quaerat tenetur ut sequi iure, ad nisi porro doloremque
+      aliquam.
+    </p>
+    <h2 id="Work">Experiência</h2>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto illo
+      placeat error, dignissimos autem necessitatibus dolorem recusandae quae
+      quasi molestiae quaerat tenetur ut sequi iure, ad nisi porro doloremque
+      aliquam.
+    </p>
+    <a href="../Conceitos/Conceitos.html">Estudo nº1</a><br />
+    <a href="..//Trabalhando com Elementos/Trabalhando-elementos.html"
+      >Estudo nº2</a
+    >
+    <h2 id="Skills">Skills</h2>
+    <ul>
+      <li>Java</li>
+      <li>Html</li>
+      <li>Css</li>
+      <li>Vue.JS</li>
+      <li>Python</li>
+    </ul>
+    <h2 id="FindMe">Encontre-me</h2>
+    <nav>
+      <ul>
+        <li><a href="https://Github.com/Decoollima">Github</a></li>
+        <li><a href="mailto:decoollima@gmail.com">Gmail</a></li>
+        <li><a href="tel:+5571981827111">Telefone</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
