@@ -1,0 +1,93 @@
+<!--
+  Tabelas
+
+    <table> = Tag principal
+      <Caption></caption> = Descrição/Tema da tabela
+        <thead> = Tudo o que contém dentro do cabeçalho
+          <tr> = Table Row (Linha)
+            <th></th> = Table Header (cabeçalho)
+          </tr>
+        </thead>
+        <tbody> = Tudo o que contém dentro do corpo da tabela
+          <tr> = Table Row (Linha)
+            <td></td> = Table Data (Dados referntes ao tópico da coluna)
+          </tr>
+        </tbody>
+        <tfoot> = Rodapé da tabela
+          <tr>
+            <td></td>
+          </tr>
+        </tfoot>
+    </table>
+-->
+<!--
+  Atributos para modificação da tabela
+
+    rowspan="" - (Defini a quantidade de linhas que uma colinha ocupará)
+    colspan="" - (Defini a quantidade de colunas dentro de um mesmo cabeçalho)
+    span="" - (Utilizando dentro da tag Col ou Row)
+    style="" - (estilizar dentro d HTML)
+    scope="" - (Identificar a posição/hierarquia de uma tag)
+
+-->
+<!--
+  Estilizando a tabela dentro do HTML
+
+    <colgroup> = Tag principal
+      <col> = Tag referente a coluna
+      <col span= 3 style= "background-color: pink">
+    </colgroup>
+    -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tabela Básica</title>
+  </head>
+  <body>
+    <table>
+      <caption style="background-color: brown;">
+        Análise dos Casais
+      </caption>
+      <colgroup>
+        <col>
+        <col span="3" style="background-color: gold;">
+      </colgroup>
+      <thead>
+        <tr>
+          <th rowspan="2" style="background-color: gold
+          ;"></th>
+          <th colspan="3" scope="colgroup">Tabela Dos Romanticos</th>
+        </tr>
+        <tr>
+          <th scope="col">Nome</th>
+          <th scope="col">Idade</th>
+          <th scope="col">Altura</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th rowspan="2" scope="rowgroup" style="background-color: gold;">Casal 1</th>
+            <td style="background-color: blue;">André</td>
+            <td style="background-color: blue;">19</td>
+            <td style="background-color: blue;">1,79</td>
+          <tr>
+            <td>mariana</td>
+            <td>18</td>
+            <td>1,55</td>
+          </tr>
+        </tr>
+        <tr>
+          <th rowspan="2" scope="rowgroup" style="background-color: gold;">Casal 2</th>
+          <td style="background-color: blue;">Diogo</td>
+          <td style="background-color: blue;">22</td>
+          <td style="background-color: blue;">1,77</td>
+          <tr>
+            <td>Ticiana</td>
+            <td>19</td>
+            <td>1,68</td>
+          </tr>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
